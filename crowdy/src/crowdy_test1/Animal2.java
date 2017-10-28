@@ -1,4 +1,4 @@
-package crowdy;
+package crowdy_test1;
 
 import java.util.Random;
 
@@ -11,7 +11,8 @@ public class Animal2 {
 		String[] animalsSound =
 			{"¾ß¿Ë","¸Û¸Û","¾îÈï","","","","²¿³¢¿À","À½¸Þ","²Ü²Ü","¾Æ¿À","³¢³¢","°³±¼","¸É¸É","²Ð²Ð","±¸±¸","¾Þ¾Þ","¸Å¾Ö","","³¢·è",""};
 		//¹Ýº¹¹®À¸·Î 20¸¶¸® ¸ðµÎ Ãâ·Â
-		for(int i = 0; i < animals.length; i++){
+		Random r = new Random();
+		for(int i = 0; i < 4; i++){
 			if(animals[i]=="±ÝºØ¾î"||animals[i]=="¿ÀÂ¡¾î"){
 				//±ÝºØ¾î³ª ¿ÀÁø¾î´Â ¿ïÁö ¸øÇÑ´Ù.
 				System.out.println(animals[i]+"´Â/Àº ¿ïÁö ¸øÇÑ´Ù.");
@@ -23,7 +24,6 @@ public class Animal2 {
 				//¾Þ¹«»õ´Â ¼Ò¸®¸¦ µû¶óÇÑ´Ù.
 				System.out.print(animals[i]+"´Â/Àº ÀÎ°£ÀÌ µéÀ» ¼ö ÀÖ´Â ¼Ò¸®·Î ¿î´Ù.");
 				// µû¶óÇÏ´Â µ¿¹° randomÀ¸·Î Ãâ·Â
-				Random r = new Random();
 				int reIdx = r.nextInt(animals.length);
 				String reAnimal = (animals[reIdx]);
 				String reSound = (animalsSound[reIdx]);
